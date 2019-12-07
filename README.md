@@ -1,2 +1,2 @@
-# rock-paper-scissors
-Rock, Paper, Scissors Project
+# rock-papper-scissors-game
+little game project from vuevixens course
