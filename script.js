@@ -8,6 +8,7 @@
         userChoice = document.querySelector(".radio:checked").value
        checkWinner()
        console.log(userChoice, computerChoice, isUserWinner)
+       showResult()
    }
    const checkWinner = () => {
        if (userChoice === "rock" && computerChoice === "scissors") {
@@ -22,4 +23,20 @@
            isUserWinner = false
        }
        return isUserWinner
+   }
+   const showResult = function () {
+       switch (isUserWinner) {
+           case true:
+               document.querySelector(".winner").style.display = "block"
+               document.querySelector(".loser").style.display = "none"
+               break;
+            case false:
+                document.querySelector(".winner").style.display = "none"
+                document.querySelector(".loser").style.display = "block"
+                break;
+           default:
+                document.querySelector(".winner").style.display = "none"
+                document.querySelector(".loser").style.display = "none"
+               break;
+       }
    }
